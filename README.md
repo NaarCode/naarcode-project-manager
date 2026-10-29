@@ -41,6 +41,17 @@ Progress counts completed items against applicable items, excluding those marked
 
 See [Architecture](docs/ARCHITECTURE.md) for the system boundaries and workflow decisions.
 
+
+## Selected source example
+
+A small, source-derived code sample is available: [domain validation](examples/domain-validation.ts). It illustrates an isolated engineering technique used in the original project. The associated [test file](examples/domain-validation.test.ts) uses synthetic inputs and contains no customer or production data.
+
+```sh
+node --experimental-strip-types --test examples/domain-validation.test.ts
+```
+
+The example has been separated from the original application and may be lightly adapted for standalone review. **It is not the full product, a deployment package, or a representation of every proprietary module.**
+
 ## Availability
 
 This repository is a **portfolio presentation**, not a deployable version of the product. It contains no production database, private configuration, authentication implementation, or application business logic.
